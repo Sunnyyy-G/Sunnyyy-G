@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Nikeee商城直营Nikeee公司旗下所有产品，囊括系列Nikeee男女运动服、运动鞋、羽绒、健身等系列，Nikeee生活周边，同时提供Nikeee客户服务及售后支持。" />
+    <meta name="Keywords" content="网上购物,网上商城,鞋子,运动鞋,运动服,羽绒,健身,跑步,篮球,足球,运动装备，Nikeee" />
+    <title>Nikeee商业网站-运动鞋、运动服、羽绒、健身、跑步</title>
+    <style type="text/css">
+        * {
+            list-style: none;/*  设置列表样式无；list-style 简写属性在一个声明中设置所有的列表属性。 */
+            text-decoration: none;/* 设置无下划线 */
+            margin:0; /* 设置所有外边距属性为0 */
+            padding:0;/* 填充 */
+        }
+        .safety {
+            width: 1100px;
+            height:70px;
+            margin: 0 auto;
+            box-shadow: inset 0 -0.3px 0px #2D2D2D;
+            /* box-shadow属性可以设置一个或多个下拉阴影的框。语法：水平阴影的位置 + 垂直阴影的位置 + 模糊距离（blur） + 阴影的大小（spread） + color+inset【从外层的阴影（开始时）改变阴影内侧阴影】 */
+        }
+        .logo {
+            float: left;
+            margin-left: 45px;
+        }
+        .head0 {
+            float: left;
+            margin-left: 260px;
+            width: 300px;
+        }
+        .head1 li {
+            float: left;
+            position: relative;/* relative 定位相对定位元素的定位是相对其正常位置。 */
+            margin-left: 10px;
+        }
+        .head1 li p {
+            position: absolute;/* 绝对定位的元素的位置相对于最近的已定位父元素，如果元素没有已定位的父元素，那么它的位置相对于<html>;absolute 定位使元素的位置与文档流无关，因此不占据空间;absolute 定位的元素和其他元素重叠。 */
+            top: 70px;
+            left: 0;
+            width: 56px;
+            height: 145px;
+            background-color: #2d2d2d;
+            display: none;
+            z-index: 10;/* z-index 属性指定一个元素的堆叠顺序。拥有更高堆叠顺序的元素总是会处于堆叠顺序较低的元素的前面。 */
+        }
+        .head1 a {
+            font: 18px/2 微软雅黑;
+        }
+        .head1 li:hover {
+            background-color:#2d2d2d;
+        }
+        .head1 li p a,.head2 a {
+            display:block;
+            font: 12px/2 宋体;
+            padding: 0 6px;
+            color: #ababab;
+            width: auto;
+        }
+        .head1 li:hover p {
+            display: block;
+        }
+        .head1 li p a:hover {
+            color:#ffba00;
+        }
+        .head1 a {
+            color: #000;
+            width: 56px;
+            display: block;
+            text-align: center;
+            line-height: 70px;
+        }
+        .head1 a:hover {
+            background-color: #2d2d2d;
+            color: #fff;
+        }
+        .head2 {
+            float: left;
+            margin-left: 165px;
+            margin-top: 16px;
+        }
+        /* .input_1 {
+            height: 30px;
+            border-radius: 5px;
+            float: left;
+        } */
+        .content, .content2, .content3, .footer1 {
+            width: 1100px;
+            margin: 0 auto;
+        }
+        .content p, .content2 p {
+            margin-left: 265px;
+        }
+        .content1 {
+            float: left;
+            width: 370px;
+        }
+        .content11 {
+            font: 20px/1.5 微软雅黑;
+            margin-top: 45px;
+            margin-left: 140px;
+        }
+        .content12 {
+            font: 12px/2 宋体;
+            color: #ababab;
+            margin-left: 50px;
+        }
+        .content3 p {
+            width: 100px;
+            height: 40px;
+            border: solid 0.3px #ababab;
+            margin: 0 auto;
+        }
+        .content3 p a {
+            font: 15px/1.5 微软雅黑;
+            padding-left: 8px;
+            padding-top: 9px;
+        }
+        .content4 {
+            width: 100%;
+            background-color: #F1F1F1;
+            height: 1373px;
+            position: relative;
+        }
+        .content41 {
+            margin: 0 auto;
+            width: 1100px;
+        }
+        .content41 img {
+            margin-left: 440px;
+        }
+        .content42 img {
+            width: 1100px;
+            height: 250px;
+            margin-left: 155px;
+            margin-top: 10px;
+        }
+        .content42 a {
+            display: block;
+            padding-left: 667px;
+            position: absolute;
+            padding-top: 120px;
+            color: #F1F1F1;
+            font-size: 18px;
+        }
+        .content43 img {
+            width: 1100px;
+            height: 150px;
+            margin-left: 155px;
+            margin-top: 10px;
+        }
+        .content42 img:hover {
+            box-shadow: 0 4px 6px #2d2d2d;
+        }
+        .footer {
+            width: 100%;
+            height: 280px;
+            background-color: #191919;
+        }
+        .footer1 li a {
+            font: 12px/2 宋体 ;
+            color: #ababab;
+        }
+        .footer1 li a:hover {
+            color: aliceblue;
+        }
+        .footer1 ul {
+            padding-top: 45px;
+            float: left;
+        }
+        .footer_down {
+            margin-left: 400px;
+            margin-top: 20px;
+        }
+        .footer_down a {
+            font: 12px/2 宋体;
+            color: #fff;
+        }
+        .footer_down span {
+            font: 12px/2 宋体;
+            color: #fff;
+        }
+        .footer_down a:hover {
+            color: #ababab;
+        }
+
+
+    </style>
+    <script src="js/jquery.1.7.2.min.js"></script>
+    <script src="js/jquery.img_silder.js"></script>
+    <script>
+        $(function(){
+            $('#silder').imgSilder({
+                s_width:'100%',
+                s_height:650,
+                is_showTit:true,
+                s_times:3000,
+                css_link:'css/style.css'
+            });
+        });
+    </script>
+</head>
+<body>
+   <div>
+       <!-- 头部（logo+导航栏nav+用户搜索栏）start -->
+       <div class="head safety">
+           <div class="logo"><a href="index.html"><img src="img/logo_1.png" alt=""></a></div>
+           <div class="head0">
+               <ul class="head1">
+                   <li><a href="index.html">首页</a></li>
+                   <li>
+                       <a href="index-boy.html">男子</a>
+                       <p>
+                           <a href="index-boy.html">男鞋</a>
+                           <a href="index-boy.html">羽绒</a>
+                           <a href="index-boy.html">运动鞋</a>
+                           <a href="index-boy.html">运动服</a>
+                           <a href="index-boy.html">健身</a>
+                           <a href="index-boy.html">跑步</a>
+                       </p>
+                   </li>
+                   <li>
+                        <a href="index-girl.html">女子</a>
+                        <p>
+                            <a href="index-girl.html">女鞋</a>
+                            <a href="index-girl.html">羽绒</a>
+                            <a href="index-girl.html">运动鞋</a>
+                            <a href="index-girl.html">运动服</a>
+                            <a href="index-girl.html">健身</a>
+                            <a href="index-girl.html">跑步</a>
+                        </p>
+                   </li>
+                   <li>
+                       <a href="index-customize.html">定制</a>
+                   </li>
+               </ul>
+           </div>
+           <div class="head2">
+               <form>
+                   <a href="#">搜索</a>
+                   <input type="text" class="input_1" name="myname">
+               </form>
+           </div>
+       </div>
+       <!-- 头部（logo+导航栏nav+用户搜索栏）end -->
+
+       <!-- banner部分（带js图片轮播功能）start -->
+       <div class="silder" id="silder">
+            <ul class="silder_list" id="silder_list">
+                <li><img src="img/12.1_MLP_P1_12_Soles.jpg" border="0" alt="12年，专业脚底设计"></li>
+                <li><img src="img/Hub_P1.jpg"  border="0" alt="尽你所能，练就最好的自己"></li>
+                <li><img src="img/HO16_RN_M_Shieldpack.jpg" border="0" alt="风雨无阻，每一步"></li>
+                <li><img src="img/12.15_HO16_MLP_P1_XCAT_Gifting_Footwear.jpg"  border="0" alt="新款上市"></li>
+            </ul>
+       </div>
+       <!-- banner部分（带js图片轮播功能）end -->
+       
+       <!-- 页面主体content部分start -->
+       <div class="content">
+           <p><img src="img/nake_1.png"></p>
+           <div><img  style="width: 1100px; margin: 0 auto;" src="img/nake_3.png"></div>
+           <ul class="content1">
+               <li class="content11">运动装备</li>
+               <li class="content12">作为会员，享受免费配送服务和30天退换货政策</li>
+               <li class="content12" style="margin-left: 130px;">理想装备近在咫尺</li>
+           </ul>
+           <ul class="content1">
+               <li class="content11">专业指导</li>
+               <li class="content12">认识 Nike+  的专家们，在 Nike+ 应用内外找到最</li>
+               <li class="content12" style="margin-left: 130px;">适合你们的服务哦。</li>
+           </ul>
+           <ul class="content1"  style="width: 350px;">
+               <li class="content11">丰富活动</li>
+               <li class="content12">通过 APP 预定线下课程，参加我们的特别活动和每</li>
+               <li class="content12" style="margin-left: 130px;">周不容错过的训练</li>
+           </ul>
+       </div>
+       <div class="content2">
+           <p style="margin-left: 295px;"><img src="img/nake_2.png"></p>
+       </div>
+       <div class="content3" style="height: 90px;">
+            <p><a href="#">加入NAKE+</a></p>
+       </div>
+       <div class="content4">
+            <p class="content41"><img src="img/nake_4.png"></p>
+            <p class="content42"><img src="img/Hub_P5.jpg"><a href="#">预定活动</a></p>
+            <p class="content42"><img src="img/Hub_P6.jpg"><a href="#">应用程序</a></p>
+            <p class="content42"><img src="img/Hub_P7.jpg"><a href="#">查找商店</a></p>
+            <p class="content42"><img src="img/Hub_P9.jpg"></p>
+            <p class="content43"><img src="img/Hub_P10.jpg"></p>
+       </div>
+       <!-- 页面主体content部分end -->
+
+       <!-- 页面尾部footer部分start -->
+       <div class="footer">
+           <div class="footer1" style="height: 220px;">
+                <ul>
+                    <li><a href="#">电子礼品卡</a></li>
+                    <li><a href="#">附近商店</a></li>
+                    <li><a href="#">订阅电子邮件</a></li>
+                    <li><a href="#">注册NIKE会员</a></li>
+                </ul>
+                <ul style="margin-left: 80px;">
+                    <li><a href="#">获取帮助</a></li>
+                    <li><a href="#">订单状态</a></li>
+                    <li><a href="#">配送方式</a></li>
+                    <li><a href="#">退换货</a></li>
+                    <li><a href="#">付款选项</a></li>
+                    <li><a href="#">联系我们</a></li>
+                </ul>
+                <ul style="margin-left: 80px;">
+                    <li><a href="#">新闻</a></li>
+                    <li><a href="#">关于NIKE</a></li>
+                    <li><a href="#">投资者</a></li>
+                    <li><a href="#">招贤纳士</a></li>
+                    <li><a href="#">新品预览</a></li>
+                </ul>
+                <p style="float: right;"><a href="#"><img src="img/foote_1.png"></a></p>
+           </div>
+           <!-- 版权声明start -->
+           <div class="footer_down">
+               <a href="#">隐私权保护政策</a><span>|</span><a href="#">使用条例</a><span>|</span><a href="#">沪ICP备11025349号-3</a><span>|</span><span>©ASUSTeK Computer Inc. All   rights reserved.</span>
+           </div>
+           <!-- 版权声明end -->
+       </div>
+       <!-- 页面尾部footer部分end -->
+   </div> 
+</body>
+</html>

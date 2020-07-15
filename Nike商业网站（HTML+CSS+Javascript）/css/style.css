@@ -1,0 +1,167 @@
+/* index.html首页样式 +banner部分（图片轮播功能）css样式*/
+/* 初始化css */
+body, ol, ul, h1, h2, h3, h4, h5, h6, p, th, td, dl, dd, form, fieldset, legend, input, textarea, select {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font: 12px '宋体', 'Microsoft YaHei', Arial, Helvetica, sans-serif, 'Arial Narrow', HELVETICA;
+    background: #fff;
+    -webkit-text-size-adjust: 100%;
+    /* 浏览器兼容、样式兼容 */
+}
+a {
+    color: #000;
+    text-decoration: none;
+    display: inline-block;
+}
+a:hover {
+    color: #3468f1;
+    text-decoration: none;
+}
+em {
+    font-style: normal;
+    /* font-style属性指定文本的字体样式。
+    normal	默认值。浏览器显示一个标准的字体样式。
+    italic	浏览器会显示一个斜体的字体样式。
+    oblique	浏览器会显示一个倾斜的字体样式。
+    inherit	规定应该从父元素继承字体样式。 */
+}
+li {
+    list-style: none;
+}
+img {
+    border: 0;
+    vertical-align: middle;
+    /* vertical-align 属性设置一个元素的垂直对齐方式。middle	把此元素放置在父元素的中部。
+    该属性定义行内元素的基线相对于该元素所在行的基线的垂直对齐。允许指定负长度值和百分比值。这会使元素降低而不是升高。在表单元格中，这个属性会设置单元格框中的单元格内容的对齐方式。
+    baseline	默认。元素放置在父元素的基线上。
+    sub	垂直对齐文本的下标。
+    super	垂直对齐文本的上标
+    top	把元素的顶端与行中最高元素的顶端对齐
+    text-top	把元素的顶端与父元素字体的顶端对齐
+    middle	把此元素放置在父元素的中部。
+    bottom	把元素的底端与行中最低的元素的顶端对齐。
+    text-bottom	把元素的底端与父元素字体的底端对齐。
+    length	 
+    %	使用 "line-height" 属性的百分比值来排列此元素。允许使用负值。
+    inherit	规定应该从父元素继承 vertical-align 属性的值。 */
+}
+table {
+    border-collapse: collapse;
+    /* border-collapse 属性设置表格的边框是否被合并为一个单一的边框，还是象在标准的 HTML 中那样分开显示。
+    collapse	如果可能，边框会合并为一个单一的边框。会忽略 border-spacing 和 empty-cells 属性
+    separate	默认值。边框会被分开。不会忽略 border-spacing 和 empty-cells 属性
+    inherit	规定应该从父元素继承 border-collapse 属性的值 */
+    border-spacing: 0;
+    /* border-spacing 属性设置相邻单元格的边框间的距离（仅用于"边框分离"模式）。
+    length length	规定相邻单元的边框之间的距离。使用 px、cm 等单位。不允许使用负值。
+        如果定义一个 length 参数，那么定义的是水平和垂直间距。
+        如果定义两个 length 参数，那么第一个设置水平间距，而第二个设置垂直间距。
+    inherit	指定应该从父元素继承border - spacing属性的值 */
+}
+p {
+    word-wrap: break-word;
+    /* word-wrap属性允许长的内容可以自动换行。
+    normal	只在允许的断字点换行（浏览器保持默认处理）。
+    break-word	在长单词或 URL 地址内部进行换行。 */
+}
+/* 轮播 */
+.silder {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    /* overflow属性指定如果内容溢出一个元素的框，会发生什么。hidden	内容会被修剪，并且其余内容是不可见的。
+    注意：在X Lion(Mac OS),滚动条显示默认是隐藏的,只有当被使用(即使"overflow:scroll"已设置)。
+    visible	默认值。内容不会被修剪，会呈现在元素框之外。
+    hidden	内容会被修剪，并且其余内容是不可见的。
+    scroll	内容会被修剪，但是浏览器会显示滚动条以便查看其余的内容。
+    auto	如果内容被修剪，则浏览器会显示滚动条以便查看其余的内容。
+    inherit	规定应该从父元素继承 overflow 属性的值。 */
+    text-align: center;
+    margin: 0 auto;
+    position: relative;
+    /* position属性指定一个元素（静态的，相对的，绝对或固定）的定位方法的类型。
+            absolute	生成绝对定位的元素，相对于 static 定位以外的第一个父元素进行定位。元素的位置通过 "left", "top", "right" 以及 "bottom" 属性进行规定。
+            fixed	生成固定定位的元素，相对于浏览器窗口进行定位。元素的位置通过 "left", "top", "right" 以及 "bottom" 属性进行规定。
+            relative	生成相对定位的元素，相对于其正常位置进行定位。因此，"left:20" 会向元素的 LEFT 位置添加 20 像素。 */
+    float: left;
+}
+.silder .silder_list {
+    height: 200px;
+    overflow: hidden;
+    position: relative;
+}
+.silder .silder_list a {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.silder .silder_list a, .silder .silder_list img {
+    display: inline-block;  /* inline-block	行内块元素。 */
+    float: left;
+}
+.silder .silder_page {
+    height: 42px;
+    text-align: right;
+    margin: 0 auto;
+    right: 1px;
+    overflow: hidden;
+    position: absolute;
+    bottom: 1px;
+}
+.silder .silder_page li {
+    width: 16px;
+    font-size: 12px;
+    float: left;
+    height: 16px;
+    line-height: 16px;
+    margin: 15px 10px 0 0;
+    background: #F1F1F1;
+    display: inline-block;
+    text-align: center;
+    color: #000;
+}
+.silder .silder_page li.current {
+    background: #C70B31;
+    color: #FFF;
+}
+.silder_desc {
+    color: #000;
+    font: bold;
+    background: url(tit_bg.png) repeat 0 0;  /* repeat背景图像将向垂直和水平方向重复。 */
+    float: left;
+    line-height: 42px;
+    height: 42px;
+    width: 100%;
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    text-align: left;
+    text-indent: 10px;  /* text-indent 属性规定文本块中首行文本的缩进。 */
+}
+.silder .silder_page li:hover {
+    cursor: pointer;
+    /* cursor属性定义了鼠标指针放在一个元素边界范围内时所用的光标形状,pointer	光标呈现为指示链接的指针（一只手） */
+    /* url	
+    需使用的自定义光标的 URL。
+    注释：请在此列表的末端始终定义一种普通的光标，以防没有由 URL 定义的可用光标。
+
+    default	默认光标（通常是一个箭头）
+    auto	默认。浏览器设置的光标。
+    crosshair	光标呈现为十字线。
+    pointer	光标呈现为指示链接的指针（一只手）
+    move	此光标指示某对象可被移动。
+    e-resize	此光标指示矩形框的边缘可被向右（东）移动。
+    ne-resize	此光标指示矩形框的边缘可被向上及向右移动（北/东）。
+    nw-resize	此光标指示矩形框的边缘可被向上及向左移动（北/西）。
+    n-resize	此光标指示矩形框的边缘可被向上（北）移动。
+    se-resize	此光标指示矩形框的边缘可被向下及向右移动（南/东）。
+    sw-resize	此光标指示矩形框的边缘可被向下及向左移动（南/西）。
+    s-resize	此光标指示矩形框的边缘可被向下移动（北/西）。
+    w-resize	此光标指示矩形框的边缘可被向左移动（西）。
+    text	此光标指示文本。
+    wait	此光标指示程序正忙（通常是一只表或沙漏）。
+    help	此光标指示可用的帮助（通常是一个问号或一个气球）。 */
+}
