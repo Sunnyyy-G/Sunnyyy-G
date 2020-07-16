@@ -1,0 +1,6 @@
+360度自由旋转相册项目说明：
+文件浏览工具：Google Chrome/Firefox/Opera/Safari等主流浏览器
+编写工具：Visual Studio Code
+功能：页面相册盒子360度自由旋转，字体颜色变换，音乐播放等
+涉及编程语言：HTML+CSS
+主要知识点：HTML的div盒子、图片插入，CSS的position定位、transform属性元素的2D或3D转换、opacity透明度、text-shadow阴影、linear-gradient渐变等

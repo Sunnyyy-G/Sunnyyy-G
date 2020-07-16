@@ -1,0 +1,6 @@
+品优购网购商城网站项目说明：
+文件浏览工具：Google Chrome/Firefox/Opera/Safari等主流浏览器
+编写工具：Visual Studio Code
+功能：商品分类、商品展示、商品介绍、品牌介绍、购物车、商品购买、搜索栏、产品细节等
+涉及编程语言：HTML+CSS
+主要知识点：有良好的代码规范；引入ico图标；熟悉CSS+DIV布局，页面的搭建工作；目录文件夹分类；引用到网页title标题、Description网站说明、Keywords关键字网站三大优化标签；首页与子页面的交互访问；网页中HTML代码中利用DIV将网页各主体部分划分开；float浮动、position中的relative和absolute的相对定位和绝对定位、display定义是否块级元素或行内块级元素等、z-index元素堆叠顺序、box-shadow定义阴影、引用插入CSS和Javascript文件、-webkit-text-size-adjust浏览器兼容、word-wrap:break-word在长单词或 URL 地址内部进行换行、overflow: hidden内容溢出一个元素的框，内容会被修剪，并且其余内容是不可见的、cursor鼠标指针放在一个元素边界范围内时所用的光标形状、border-radius圆角边框、opacity元素透明度;

@@ -1,0 +1,4 @@
+源代码协会社团招新海报项目说明
+使用工具：Photoshop cc
+封面：封面设计排版等
+背面：网页格式排版（包括LOGO+nav+banner+main+footer+版权声明）
